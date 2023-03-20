@@ -10,7 +10,9 @@ restSum(0); // => 0
 ***********************************************************************/
 
 function restSum(...otherNums) {
-  // Your code here
+  return otherNums.reduce(function (accum, currentNum) {
+    return accum + currentNum;
+  });
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
